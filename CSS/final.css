@@ -1,0 +1,272 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* ################## NAVIGATION BAR ############## */
+    .navbarad{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(218, 9, 9);
+    width: 100%;
+    height: 92px;
+    z-index: 1;
+}
+a:hover{
+color: rgb(14, 14, 170);  
+}
+a:checked
+{
+    color: black;
+}
+.navad{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 0%;
+}
+.logoad{
+    flex: auto;
+    margin-right: 90%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 45px;
+}
+a{
+    margin: 15px;
+    color:white;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+h1{
+    color: white;
+    margin-right: 15%;
+}
+/* ############################# Back ground Image Slider ####################################### */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.sliderad{
+    overflow: hidden ;
+    width: 100%;
+    height: 90vh;
+}
+.sliderad figure div{
+
+    float: left;
+    width: 20%;
+}
+.sliderad figure img{
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+.sliderad figure{
+    position: relative;
+    width: 500%;
+    margin: 0%;
+    animation: animate 30s infinite;
+}
+p{
+    position: fixed;
+    text-align: left;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 250px;
+    background: rgba(0,0,0,0);
+    width: 100%;
+    height: 100vh;
+}
+.slidepad{
+    position: fixed;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 250px;
+    background: rgba(0,0,0,0);
+    width: 100%;
+    height: 100vh;
+}
+.slidepmad{
+    position: fixed;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 250px;
+    background: rgba(0,0,0,0);
+    width: 100%;
+    height: 100vh;
+}
+.slidepbad{
+    position: fixed;
+    text-align: left;
+    color: white;
+    padding-top: 120px;
+    padding-left: 100px;
+    background: rgba(0,0,0,0);
+    width: 100%;
+    height: 100vh;
+    font-size: 35px;
+}
+@keyframes animate
+ {
+    0%{left:0%;}
+    10%{left:0%;}
+    12%{left:-100%;}
+    22%{left:-100%;}
+    24%{left:-200%;}
+    34%{left:-200%;}
+    36%{left:-300%;}
+    46%{left:-300%;}
+    48%{left:-400%;}
+    58%{left:-400%;}
+    60%{left:-300%;}
+    70%{left:-300%;}
+    72%{left:-200%;}
+    82%{left:-200%;}
+    84%{left:-100%;}
+    94%{left:-100%;}
+    96%{left: 0%;}
+}
+/* ############# Front Sub Boxes ######################### */
+.container1ad{
+    position: relative;
+width: 1000px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+ margin-top: 100px;
+background: white;
+margin-left: 240px; 
+}
+.container1ad .card1ad{
+position: relative;
+display: flex;
+flex-direction: column;
+background: white;
+}
+.container1ad .card1ad:nth-child(even)
+{
+    flex-direction: column-reverse;
+}
+.container1ad .card1ad .imgboxad {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #000;
+}
+.container1ad .card1ad .imgboxad img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container1ad .card1ad .content1ad{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1ad .card1ad .content1ad div{
+    padding: 20px;
+    text-align: center;
+}
+/* ########################## ICONS ################################### */
+.containerad
+{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+    background: #000;
+}
+.containerad .boxad
+{
+    position:  relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background:rgb(46, 177, 46);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.containerad .boxad .iconad
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgb(218, 9, 9);
+transition: 0.5s;
+z-index: 1;
+}
+.containerad .boxad:hover .iconad
+{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.containerad .boxad .iconad .fa 
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate( -50% , -50% );
+font-size: 80px;
+transition: 0.5sec;
+color: #fff;
+}
+.containerad .boxad:hover .iconad .fa 
+{
+    font-size: 40px;
+}
+.containerad .boxad .contentad
+{
+    position: absolute;
+    top: 100px;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.containerad .boxad .contentad h3
+{
+    margin: 10px 115px 0px ;
+    padding: 0;
+    color: #fff;
+    font-size: 30px;
+}
+.containerad .boxad .contentad h4
+{
+    margin: 0 10px 10px;
+    padding: 0;
+    padding-top: 20px;
+    font-size: 21px;
+    color: white
+}
+.containerad .boxad:hover .contentad
+{
+    top: 100px;
+    opacity: 1;
+}

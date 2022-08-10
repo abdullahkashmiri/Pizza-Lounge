@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+.containersj{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.lgheadingsj{
+    font-size: 3.5rem;
+}
+.mdheadingsj{
+    font-size: 2.2rem;
+}
+.textgreensj{
+    color: green;
+}
+.textwhitesj{
+    color: whitesmoke;
+}
+.textblacksj{
+    color: #333333;
+}
+.textgreysj{
+    color: #555555;
+}
+.btnsj{
+    display:inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btnprimarysj{
+    background-color: whitesmoke;
+    border-radius: 10em;
+}
+.headersj{
+    position: relative;
+    height: 60vh;
+    background: url('./images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+span{
+    font-size: larger;
+}
+.navbarsj{
+    padding: 1rem;
+}
+
+.headersj .navbarsj .logosj{
+    float: left;
+    font-size: 2rem;
+}
+.headersj .navbarsj .navitemssj{
+    float: right;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+
+}
+.headersj .navbarsj .navitemssj{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbarsj a:link, .navbarsj a:visited{
+    color: #333;
+}
+.navbarsj a:hover{
+    border-bottom: 1px solid #333;
+}
+.navbarsj::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.headercontentsj{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+.headercontentsj h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.headercontentsj p{
+    text-transform: uppercase;
+}
+.showcasesj{
+    background: #ddd;
+    padding: 10rem;
+}
+.rowsj{
+    height: 350px;
+    background-color: white;
+    box-shadow: 5px 5px 20px #aaa;
+}
+.row1sj{
+    margin-bottom: 10rem;
+}
+.row2sj{
+    margin-bottom: 10rem;
+}
+.row1sj .imgboxsj, .row2sj .textboxsj{
+    float: left;
+    width: 50%;
+}
+.row2sj .imgboxsj, .row1sj .textboxsj{
+    float: right;
+    width: 50%;
+}
+.rowsj .imgboxsj{
+    height: 100%;
+}
+.rowsj .textboxsj{
+    padding: 3rem;
+}
+.rowsj .imgboxsj img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

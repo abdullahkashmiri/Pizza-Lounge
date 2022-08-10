@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+.container1{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.lgheading1{
+    font-size: 3.5rem;
+}
+.mdheading1{
+    font-size: 2.2rem;
+}
+.textgreen1{
+    color: green;
+}
+.textwhite1{
+    color: whitesmoke;
+}
+.textblack1{
+    color: #333333;
+}
+.textgrey1{
+    color: #555555;
+}
+.btn1{
+    display:inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btnprimary1{
+    background-color: whitesmoke;
+    border-radius: 10em;
+}
+.header1{
+    position: relative;
+    height: 60vh;
+     background: url('./pictures/main1.jpg');      /* more pic are there for back ground in pictures folder */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar1{
+    padding: 1rem;
+}
+
+.header1 .navbar1 .logo{
+    float: left;
+    font-size: 2rem;
+}
+.header1 .navbar1 .navitems{
+    float: right;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+
+}
+.header1 .navbar1 .navitems{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar1 a:link, .navbar1 a:visited{
+    color: #333;
+}
+.navbar1 a:hover{
+    border-bottom: 1px solid #333;
+}
+.navbar1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.headercontent1{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+.headercontent1 h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.headercontent1 p{
+    text-transform: uppercase;
+}
+span{
+    font-size: larger;
+}
+.rate{
+    padding-left: 30%;
+}
+.showcase1{
+    background: #ddd;
+    padding: 10rem;
+}
+.rowQM{
+    height: 350px;
+    background-color: white;
+    box-shadow: 5px 5px 20px #aaa;
+}
+.row1QM{
+    margin-bottom: 10rem;
+}
+.row2QM{
+    margin-bottom: 10rem;
+}
+.row3QM{
+    margin-bottom: 10rem;
+}
+.row4QM{
+    margin-bottom: 10rem;
+}
+.row1QM .imgbox1, .row2QM .textbox1{
+    float: right;
+    width: 50%;
+}
+.row2QM .imgbox1, .row1QM .textbox1{
+    float: left;
+    width: 50%;
+}
+.row3QM .imgbox1, .row4QM .textbox1{
+    float: right;
+    width: 50%;
+}
+.row4QM .imgbox1, .row3QM .textbox1{
+    float: left;
+    width: 50%;
+} 
+.rowQM .imgbox1{
+    height: 100%;
+}
+.rowQM .textbox1{
+    padding: 3rem;
+}
+.rowQM .imgbox1 img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
